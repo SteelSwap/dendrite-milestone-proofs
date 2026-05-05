@@ -457,5 +457,5 @@ Not applicable for Milestone 2 — no DEX integrations were deferred. The schedu
 ### 4.6 Evidence Links
 
 - **Code:** [PR #166 — Charli3-Official/charli3-dendrite](https://github.com/Charli3-Official/charli3-dendrite/pull/166)
-- **Demo Video:** _[To be added once uploaded]_
+- **Demo Video:** [Milestone 2 Video](https://drive.google.com/file/d/1iGsbp0osyPl1YCbP46ns14glwFhjUoVW/view?usp=drive_link)
 - **Updated Technical Project Report:** This document
