@@ -1,6 +1,8 @@
 # Technical Project Report
 ## CHARLI3 Dendrite v2: DEX, Lending, P2P DeFi Data Upgrades
-### Milestone 1: Integration Feasibility and Initial DEX Work
+### Milestone 2: Complete DEX Integrations
+
+> This is the living Technical Project Report carried forward from Milestone 1. Sections 1–3 record outreach, confirmed partners, and risks captured at the close of Milestone 1. Section 4 is new for Milestone 2 and records the outcome of DEX integration work.
 
 ---
 
@@ -41,7 +43,7 @@
 - [x] Yes - Including in project
 - [ ] No - Not including in project
 
-**Rationale:** WizardSwap will be integration as a part of the P2P milestone due to the nature of contracts.
+**Rationale:** WizardSwap will be integrated as a part of the P2P milestone due to the nature of contracts.
 
 **Technical Requirements Provided:**
 - [x] Smart contract addresses
@@ -102,7 +104,7 @@
 **Communication Summary:**
 
 - Received docs for limit orders
-- Received graphQL informaiton for liquidity pools
+- Received graphQL information for liquidity pools
 
 **Response Status:**
 - [x] Received initial response
@@ -312,11 +314,11 @@ Based on the outreach activities and responses received, the following partners 
    - Expected Completion: Final Milestone (P2P DeFi Integrations)
 
 2. **ChadSwap** - DEX
-   - Status: Confirmed
+   - Status: ✅ Integrated (Milestone 2)
    - Expected Completion: Milestone 2 (Complete DEX Integrations)
 
 3. **SaturnSwap** - DEX
-   - Status: Confirmed
+   - Status: ✅ Integrated (Milestone 2)
    - Expected Completion: Milestone 2 (Complete DEX Integrations)
 
 4. **Cardano Swaps** - DEX, P2P DeFi
@@ -324,7 +326,7 @@ Based on the outreach activities and responses received, the following partners 
    - Expected Completion: Final Milestone (P2P DeFi Integrations)
 
 5. **Djed** - Algorithmic Stablecoin
-   - Status: Confirmed
+   - Status: ✅ Integrated (Milestone 2)
    - Integration Started: Milestone 1 (Initial DEX Work - partial implementation exists)
    - Expected Completion: Milestone 2 (Complete DEX Integrations - treated as limit order DEX)
 
@@ -377,6 +379,8 @@ Based on the outreach activities and responses received, the following partners 
 
 No critical issues identified at this time. All 7 integration partners have been successfully contacted and have provided necessary technical documentation. Communication channels remain open with all partners.
 
+**Milestone 2 Update:** No new third-party issues encountered during Milestone 2. All three DEX partners scoped to this milestone (Djed, ChadSwap, SaturnSwap) were integrated without delay or blocker. The risks below remain monitored and the original mitigations remain in effect.
+
 ### Identified Risks
 
 **Third-Party Dependency Risk:** Integration partners may become unresponsive, discontinue operations, or change technical architecture.
@@ -399,3 +403,59 @@ No critical issues identified at this time. All 7 integration partners have been
 
 *Mitigation Response:* Our project design includes contingency clauses for partner issues, and redundancy through multiple partners minimizes single points of failure. We will transparently document any dependency issues and timeline adjustments in the Technical Project Report.
 
+---
+
+## Section 4: DEX Integrations (Milestone 2)
+
+### 4.1 Status Summary
+
+All three DEX partners scoped to Milestone 2 from the Milestone 1 confirmed partners list have been **successfully integrated**. No third-party issues were encountered, and no replacement partners were required.
+
+**DEX Partners Scoped to Milestone 2:**
+1. Djed (Algorithmic Stablecoin, treated as limit-order DEX)
+2. ChadSwap (DEX)
+3. SaturnSwap (DEX)
+
+> WizardSwap and Cardano Swaps are confirmed DEX partners but scoped to the Final Milestone due to their P2P DeFi nature. See Section 2.2 for the full integration timeline.
+
+### 4.2 Integration Details
+
+#### Djed (and Shen)
+- **Integration Status:** ✅ Successful
+- **Capabilities Demonstrated:**
+  - Retrieve oracle price for Djed and Shen
+  - Accurately calculate mint and burn costs (where contract rules permit mint/burn)
+- **Third-Party Issues:** None
+- **Code:** Merged in [PR #166](https://github.com/Charli3-Official/charli3-dendrite/pull/166)
+
+#### ChadSwap
+- **Integration Status:** ✅ Successful
+- **Capabilities Demonstrated:**
+  - Retrieve order book prices
+- **Third-Party Issues:** None
+- **Code:** Merged in [PR #166](https://github.com/Charli3-Official/charli3-dendrite/pull/166)
+
+#### SaturnSwap
+- **Integration Status:** ✅ Successful
+- **Capabilities Demonstrated:**
+  - Retrieve order book prices
+- **Third-Party Issues:** None
+- **Code:** Merged in [PR #166](https://github.com/Charli3-Official/charli3-dendrite/pull/166)
+
+### 4.3 Third-Party Issues Encountered
+
+**None.** All three DEX partners cooperated as expected, technical documentation provided in Milestone 1 was sufficient, and no protocol changes or outages affected the integration work.
+
+### 4.4 Replacement Partners Required
+
+**None.** All originally-scoped DEX integrations were completed successfully; no alternatives were required.
+
+### 4.5 Future-Milestone Plans for Deferred Integrations
+
+Not applicable for Milestone 2 — no DEX integrations were deferred. The scheduled deferrals for WizardSwap and Cardano Swaps to the Final Milestone are by original design (P2P DeFi nature), not the result of any blocker.
+
+### 4.6 Evidence Links
+
+- **Code:** [PR #166 — Charli3-Official/charli3-dendrite](https://github.com/Charli3-Official/charli3-dendrite/pull/166)
+- **Demo Video:** _[To be added once uploaded]_
+- **Updated Technical Project Report:** This document
